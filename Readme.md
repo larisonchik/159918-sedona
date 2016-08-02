@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Larisa Kalinina](https://up.htmlacademy.ru/htmlcss/14/user/159918).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова] (https://htmlacademy.ru/profile/id5608).
 
 ---
 
