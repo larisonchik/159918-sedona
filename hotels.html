@@ -18,6 +18,7 @@
         </nav>
       </div>
     </header>
+	<main>
      <div class="container">
         <form class="feature-search-form" action="#" method="get">
             <fieldset class="infrastructure column">
@@ -38,39 +39,30 @@
                 <input type="checkbox" name="apartments" id="apartments-field" checked>
                 <label for="apartments-field">Апартаменты</label>
             </fieldset>
-            <div class="right-column">
-                <fieldset class="price">
-                    <div>
-                        <h3 class="price-range">Стоимость в сутки (Р):</h3>
-                        <div class="range-filter">
-                            <div class="price-controls">
-                                <label class="min-price">от
-                                    <input class="input-min-price" name="min-price" type="text" value="0">
-                                </label>
-                                <label class="max-price">до
-                                    <input name="max-price" type="text" value="3000">
-                                </label>
-                            </div>
-                            <div class="range-controls">
-                                <div class="scale">
-                                    <div class="bar"></div>
-                                </div>
-                                <div class="toggle toggle-min"></div>
-                                <div class="toggle toggle-max"></div>
-                            </div>
-                        </div>
+            <fieldset class="price">
+			    <h3 class="price-range">Стоимость в сутки (Р):</h3>
+			    <div class="range-filter">
+                    <div class="range-controls">
+                         <div class="toggle min-toggle"></div>
+                         <div class="toggle max-toggle"></div>
                     </div>
-                </fieldset>
+                    <div class="price-controls">
+                         от <input class="min-price" type="text" value="0">
+                         до <input class="max-price" type="text" value="3000">
+                    </div>
+                </div>
+            </fieldset>
                 <button type="submit" name="button-show">Показать</button>
-            </div>
         </form>
     </div>
     <div class="results">
-        <h4 class="results-count">Найдено: <span>3</span></h4>
-        <h5 class="sort">Сортировка:</h5>
-          <a          class="sort-btn active">По цене</a>
-          <a href="#" class="sort-btn">По типу</a>
-          <a href="#" class="sort-btn">По рейтингу</a>
+        <div class="results-count">Найдено: <span>3</span></div>
+        <div class="sort">Сортировка:</div>
+		  <ul>
+             <li><a          class="sort-btn active">По цене</a></li>
+             <li><a href="#" class="sort-btn">По типу</a></li>
+             <li><a href="#" class="sort-btn">По рейтингу</a></li>
+		  </ul> 	 
         <ul class="sort-list-up-down">
 		  <li><a class="active">По возрастанию</a></li>
           <li><a href="#">По убыванию</a></li>
@@ -138,6 +130,7 @@
             </div>
         </div>
     </div>
+	</main>
     <footer class="main-footer">
         <div class="container">
             <span class="hashtag">#visitsedona</span>
