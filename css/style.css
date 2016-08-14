@@ -1,21 +1,358 @@
+* {
+    outline: 1px solid black;
+}
 body {
     font-size: 14px;
-    line-height: 21px;
-    color: #333333;
-    font-weight: normal;
-    font-family: "PT Sans", "Arial", sans-serif;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Narrow Bold";
 }
 h1{
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 30px;
+    line-height: auto;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans Narrow Bold";
 }
 h2{
-	font-size: 21px;
-    line-height: 21px;
+	font-size: 24px;
+    line-height: auto;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans Narrow Bold"; 
 }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    padding: 0;
+    margin: auto;
+    width: 1200px;
+}
+.logo {
+    width: 138px;
+}
+.main-navigation {
+    width: 1200px;
+}
+.main-navigation li {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+	width: 400px;
+}
+.right {
+    text-align: right;
+    float: right;
+}
+
+/*стили для index*/
+
+.big-logo {
+    width: 1200px;
+}
+
+.reasons-header{
+    text-align: center;
+}
+
+.reasons-item {
+    text-align: center;
+}
+
+.features-item {
+    float: left;
+    width: 240px;
+    min-height: 270px;
+	margin-left:72px;
+	margin-right:88px;
+}
+.features-title {
+    text-align: center;
+}
+.features-text {
+    width: 240px;
+    text-align: center;
+}
+
+.reason-grey {
+    float: left;
+	width: 240px;
+    min-height: 270px;
+	margin-left:72px;
+	margin-right:88px;
+}
+.grey-title {
+    color: #000000;
+	width: 240px;
+}
+.reason-grey p {
+    width: 240px;
+}
+.reason-grey .narrow-text {
+    width: 240px;
+}
+.search-form {
+    width: 575px;
+    text-align: center;
+}
+
+.column-left {
+    float: left;
+    width: 105px;
+}
+.column-right {
+    float: right;
+    width: 346px;
+}
+.hotel-form .input {
+    border: 2px solid #f2f2f2;
+    background-color: #f2f2f2;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #000000;
+}
+.big {
+    float: right;
+    width: 337px;
+}
+.adults {
+    float: left;
+}
+.kids {
+    float: right;
+}
+.label-kids {
+    float: right;
+}
+.btn-find {
+    width: 100%;
+    text-align: center;
+}
+
+/*стили для hotels*/
+.feature-search-form {
+    background-color: #81b3d2;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+.column {
+    width: 160px;
+    padding: 0;
+}
+.column label {
+    display: block;
+}
+.infrastructure {
+    margin: 12px 46px;
+    float: left; 
+    margin-bottom: 16px;
+}
+.accomodation-type {
+    margin: 12px 35px;
+    float: left;
+    margin-bottom: 16px;
+}
+.right-column {
+    width: 250px;
+    min-height: 158px;
+    float: left;
+}
+.range-filter {
+    display: block;
+    width: 224px;
+}
+.price-controls {
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+.price-controls label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+}
+
+.price-controls .input-min-price {
+    width: 29px;
+}
+
+.range-controls .bar {
+    width: 81%;
+    height: 2px;
+    background: #ffffff;
+}
+
+fieldset {
+    border: none;
+}
+.results {
+    width: 678px;
+    margin: 0px auto;
+    margin-bottom: 2px;
+}
+.results-count, 
+.sort {
+    display: inline-block;
+    vertical-align: middle;
+}
+.results-count {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-right: 44px;
+    padding-top: 0px;
+}
+.sort {
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 34px;
+    padding-top: 3px;
+}
+.sort-btn {
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 29px;
+    border-bottom: 1px dotted #81b3d2;
+    text-decoration: none;
+}
+
+.icon-up-dir {
+    left: 85px;
+    top: 5px;
+}
+.icon-down-dir {
+    left: 76px;
+    top: 4px;
+}
+
+.results-container {
+    width: 768px;
+    margin: 0 auto;
+}
+.hotel {
+    border-top: 1px solid #e5e5e5;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.results-hotel {
+    width: 676px;
+    margin: 0 auto;
+}
+.results-hotel img {
+    float: left;
+}
+.central-column {
+    width: 380px;
+    float: left;
+}
+.hotel-name {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-top: -4px;
+    margin-bottom: 6px;
+    margin-left: 31px;
+    padding-top: 0px;
+    text-decoration: none;
+    color: #000000;
+    width: 330px;
+    display: block;
+}
+.results-hotel-type,
+.results-price-range {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+}
+.results-hotel-type {
+    width: 110px;
+    margin-left: 31px;
+}
+.results-price-range {
+    margin-left: 2px;
+    margin-right: 90px;
+}
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3px 16px;
+    margin-top: 14px;
+}
+.btn-more {
+    background-color: #81b3d2;
+    margin-left: 32px;
+    margin-right: 2px;
+}
+.btn-book {
+    background-color: #766357;
+}
+.stars {
+    float: right;
+    width: 110px;
+}
+.icon-star {
+    float: right;
+    width: 24px;
+}
+.stars li {
+	display: inline-block;
+}
+.rating {
+    float: right;
+    width: 90px;
+    padding: 2px 6px;
+    background-color: #f2f2f2;
+    color: #666666;
+    margin-top: 43px;
+}
+/*стили для hotel-search*/
+.inner-form {
+    display: block;
+    width: 453px;
+    margin: 0 auto;
+}
+.inner-form .icon-calendar {
+    left: 475px;
+}
+/* Стили футера */
+
+.hashtag {
+    float: left;
+	width: 240px;
+}
+.footer-social {
+    float: left;
+    width: 400px;
+}
+.social-btn {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-copyright {
+    float: right;
+}
+.footer-copyright span {
+    display: inline-block;
+}
+
