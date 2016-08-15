@@ -36,21 +36,27 @@ h2{
     width: 138px;
 }
 .main-navigation {
+	font-size: 0;
     width: 1200px;
 }
 .main-navigation li {
     display: inline-block;
+	font-size: 14px;
 }
-
 .left {
     float: left;
 	width: 400px;
+}
+.reason-1 img{
+	float:right;
 }
 .right {
     text-align: right;
     float: right;
 }
-
+.reason-2 img{
+	float:left;
+}
 /*стили для index*/
 
 .big-logo {
@@ -98,6 +104,7 @@ h2{
     width: 240px;
 }
 .search-form {
+	margin: 0 auto;
     width: 575px;
     text-align: center;
 }
@@ -184,11 +191,11 @@ h2{
 }
 
 .price-controls .input-min-price {
+	float:right;
     width: 29px;
 }
 
 .range-controls .bar {
-    width: 81%;
     height: 2px;
     background: #ffffff;
 }
@@ -197,8 +204,6 @@ fieldset {
     border: none;
 }
 .results {
-    width: 678px;
-    margin: 0px auto;
     margin-bottom: 2px;
 }
 .results-count, 
@@ -241,13 +246,11 @@ fieldset {
     width: 768px;
     margin: 0 auto;
 }
-.hotel {
-    border-top: 1px solid #e5e5e5;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
 
 .results-hotel {
+	border-top: 1px solid #e5e5e5;
+    padding-bottom: 30px;
+    padding-top: 30px;
     width: 676px;
     margin: 0 auto;
 }
