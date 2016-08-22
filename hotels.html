@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона.Отели</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -12,10 +14,11 @@
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и Видео</a></li>
-			<li class="logo"><a href="#"><img src="img/sedona-logo.png" alt="Логотип" width="138" height="70"></a></li>
+			<li></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
+		  <div class="logo"><a href="index.html"><img src="img/sedona-logo.png" width="138" height="70" alt="На главную"></a></li>
         </nav>
       </div>
     </header>
@@ -43,17 +46,24 @@
             <fieldset class="price">
 			    <h3 class="price-range">Стоимость в сутки (Р):</h3>
 			    <div class="range-filter">
-                    <div class="range-controls">
-                         <div class="toggle min-toggle"></div>
-                         <div class="toggle max-toggle"></div>
-                    </div>
                     <div class="price-controls">
-                         от <input class="min-price" type="text" value="0">
-                         до <input class="max-price" type="text" value="3000">
+                        <label class="min-price">от
+                            <input class="input-min-price" name="min-price" type="text" value="0">
+                        </label>
+                        <label class="max-price">до
+                             <input name="max-price" type="text" value="3000">
+                         </label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                        <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
                     </div>
                 </div>
             </fieldset>
-                <button type="submit" name="button-show">Показать</button>
+                <input class="btn-show" type="submit" value="Показать">
         </form>
     <div class="results clearfix">
         <div class="results-count">Найдено: <span>3</span></div>
@@ -134,9 +144,9 @@
         <div class="container clearfix">
             <span class="hashtag">#visitsedona</span>
             <div class="footer-social">
-                <a class="social-btn social-btn-tw">Мы в twitter.com</a>
-                <a class="social-btn social-btn-fb">Мы на facebook.com</a>
-                <a class="social-btn social-btn-youtube">Мы на youtube.com</a>
+                <a class="social-btn social-btn-tw"><i class="icon-twitter"></i></a>
+                <a class="social-btn social-btn-fb"><i class="icon-facebook"></i></a>
+                <a class="social-btn social-btn-youtube"><i class="icon-youtube"></i></a>
             </div>
             <div class="footer-copyright">
                 <span class="website">Website by</span>
