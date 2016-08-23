@@ -43,21 +43,21 @@ body {
     line-height: 26px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans Narrow Bold";
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 h1{
     font-size: 21px;
     line-height: 26px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans Narrow Bold";
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 h2{
     font-size: 30px;
     line-height: 24px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans Narrow Bold"; 
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 a {
     text-decoration: none;
@@ -443,7 +443,7 @@ ul {
     margin-bottom: 4px;
 }
 .feature-search-form h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 21px;
     margin-bottom: 25px;
@@ -495,112 +495,122 @@ ul {
     margin: 12px 46px;
     float: left; 
     margin-bottom: 16px;
+	text-transform: uppercase;
 }
 .accomodation-type {
     margin: 12px 35px;
     float: left;
     margin-bottom: 16px;
-}
-.price{
-    float: left;
-    margin: 12px 238px 10px;
-}
-.range-filter {
-    display: block;
-    width: 224px;
-    margin-left: -3px;
-    margin-top: -16px;
-    margin-bottom: 2px;
-}
-.price-controls {
-    font-size: 0;
-    border: 2px solid #ffffff;
-    border-radius: 3px;
-    margin-bottom: 3px;
-}
-.price-controls label {
-    display: inline-block;
-    vertical-align: middle;
-    width: 110px;
-    font-size: 14px;
-    text-align: right;
-    padding-top: 1px;
-}
-.price-controls input {
-    font-size: 14px;
-    text-align: left;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    background: none;
-    width: 44px;
-    padding: 6px 14px;
-    padding-left: 0px;
-}
-.price-controls .input-min-price {
-    width: 29px;
-}
-.min-price:after {
-    content: "";
-    border: 1px solid #ffffff;
-    padding-top: 2px;
-    padding-bottom: 1px;
-}
-.range-controls {
-    position: relative;
-    height: 22px;
-    padding-top: 17px;
-    padding-left: 5px;
-}
-.range-controls .scale {
-    height: 2px;
-    background: rgba(255, 255, 255, 0.5);
-}
-.range-controls .bar {
-    width: 81%;
-    height: 2px;
-    background: #ffffff;
-}
-.range-controls .toggle {
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 4px;
-    height: 4px;
-    cursor: pointer;
-    border: 8px solid #fff;
-    border-radius: 50%;
-    background: #ababab;
-}
-.range-controls .toggle-min {
-    left: 4px;
-}
-.range-controls .toggle-max {
-    left: 160px;
-}
-.range-controls .toggle-min:hover,
-.range-controls .toggle-max:hover {
-    background: #1c4f80;
+	text-transform: uppercase;
 }
 fieldset {
     border: none;
 }
-.btn-show {
-    display: inline-block;
-    vertical-align: top;
-    padding: 7px 33px;
-    padding-bottom: 6px;
+.price{
+    float: right;
+    margin: 25px 60px;
+    text-transform: uppercase;
+}
+.filter-range {
+    width: 330px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
     border: 2px solid #ffffff;
     border-radius: 2px;
+}
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+.range-toggle:hover {
+    background: #1c4f80;
+}
+.range-toggle-min {
+    left: 0;
+}
+.range-toggle-max {
+    left: 80%;
+}
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
     text-transform: uppercase;
     background: transparent;
-    margin-left: 52px;
-    color: #ffffff;
-    font-size: 14px;
-	margin-left:280px;
-}
-.btn-show:active {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
     outline: none;
+    cursor: pointer;
+}
+.btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
 }
 .results {
     margin: 0px auto;
@@ -806,7 +816,6 @@ fieldset {
     background-color: #f2f2f2;
     color: #666666;
     margin-top: 43px;
-	margin-right: 43px;
 }
 /*стили для hotel-search*/
 .inner-form {
