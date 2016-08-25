@@ -78,46 +78,46 @@
                   </div>
                </div>
             </section>
-            <section class="search-form">
+            <section class="appointment">
                <h3 class="search-title">Заинтересовались?</h3>
                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-               <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
-               <form class="hotel-form clearfix" action="#" method="get">
-                  <div class="row row1 clearfix">
-                     <label class="column-left" for="date-in">Дата заезда:</label>
-                     <input class="column-right input big date-in" type="text" placeholder="24 апреля 2016" name="date-in" id="date-in">
-                     <i class="icon-calendar"></i>
+               <div class="popup-form-header">
+                  <input class="popup-btn" type="button"  value="Поиск Гостиницы в седоне"> 
+               </div>
+               <form class="popup-form" method="post" action="#">
+                  <div class="popup-form-data popup-form-in">
+                     <label class="popup-label"> Дата заезда: <input class="form-type" type="text"  placeholder="24 Апреля 2016"></label>
                   </div>
-                  <div class="row row2 clearfix">
-                     <label class="column-left" for="date-out">Дата выезда:</label>
-                     <input class="column-right input big date-out" type="text" placeholder="4 июля 2016" name="date-out" id="date-out">
-                     <i class="icon-calendar"></i>
+                  <div class="popup-form-data popup-form-out">
+                     <label class="popup-label">Дата выезда: <input class="form-type" type="text" placeholder="4 июля 2016"></label>
                   </div>
-                  <div class="row row3 clearfix">
-                     <label class="column-left" for="adults">Взрослые:</label>
-                     <div class="column-right">
-                        <input class="input small adults" type="text" value="2" name="adults" id="adults">
-                        <i class="icon-minus icon-minus-adults"></i>
-                        <i class="icon-plus icon-plus-adults"></i>
-                        <input class="input small kids" type="text" value="0" name="children" id="children">
-                        <i class="icon-minus icon-minus-kids"></i>
-                        <i class="icon-plus icon-plus-kids"></i>
-                        <label class="label-kids" for="children">Дети:</label>
-                     </div>
+                  <div class="popup-human form-old">
+                     <label class="popup-label" for="old">Взрослые:</label>
+                     <input class="form-type btn-minus" type="button" value="-" >
+                     <input type="text" class="form-type form-qty" placeholder="2" id="old">
+                     <input class="form-type btn-plus" type="button" value="+">
                   </div>
-                  <input class="btn-find" type="submit" value="Найти">
+                  <div class="popup-human form-babes">
+                     <label class="popup-label" for="chld">Дети:</label>	
+                     <input class="form-type btn-minus" type="button" value="-">
+                     <input type="text" class="form-type form-qty" placeholder="0" id="chld">
+                     <input class="form-type btn-plus" type="button" value="+">
+                  </div>
+                  <button class="popup-btn appontment-form-submit" type="submit" value="найти" >Найти</button>
                </form>
+               <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593197.9039240244!2d-111.84426045404426!3d34.78111742865377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1441974343748" style="border:0; width:100%; height:600px" allowfullscreen></iframe>
+               </div>
             </section>
-            <div class="map">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8880955409!2d-112.35544175472498!3d34.85437338104041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2s!4v1446900438167" width="768" height="593" style="border:0" allowfullscreen></iframe>
-            </div>
          </main>
-         <footer class="main-footer">
-            <span class="hashtag">#visitsedona</span>
-            <div class="footer-social">
-               <a class="social-btn social-btn-tw"><i class="icon-twitter"></i></a>
-               <a class="social-btn social-btn-fb"><i class="icon-facebook"></i></a>
-               <a class="social-btn social-btn-youtube"><i class="icon-youtube"></i></a>
+         <footer class="footer footer-main">
+            <div class="footer-content footer-heshteg">
+               <a href="#">#Visitsedona</a>
+            </div>
+            <div class="footer-content footer-social-contacts">
+               <a href="#" class="social-btn social-btn-twi"><i class="icon-twitter"></i></a>
+               <a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a>
+               <a href="#" class="social-btn social-btn-ytub"><i class="icon-youtube"></i></a>
             </div>
             <div class="footer-copyright">
                <span class="website">Website by</span>
@@ -125,6 +125,6 @@
             </div>
          </footer>
       </div>
+      <script src="./js/script.js"></script>
    </body>
 </html>
-
