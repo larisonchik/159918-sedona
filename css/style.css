@@ -502,7 +502,7 @@ input::-webkit-input-placeholder
 	background-position: 0px -286px;
 	background-repeat: no-repeat;
 	color: #ffffff;
-	height: 213px;
+	height: 215px;
 	margin-bottom: 4px;
 }
 .feature-search-form h3
@@ -909,8 +909,11 @@ fieldset
 {
 	color: #81b3d2;
 	float: right;
-	font-size: 20px;
+	font-size: 19px;
 	margin-left:-4px;
+	margin-top:-5px;
+	padding-left:-10px;
+
 }
 .gallery-item-rating>p
 {
