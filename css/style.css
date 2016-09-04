@@ -120,7 +120,7 @@ ul
 	height: 54px;
 	min-width: 768px;
 	position: relative;
-	z-index: 2;
+	z-index: 20;
 }
 .header-main
 {
@@ -133,31 +133,16 @@ ul
 {
 	position: relative;
 	z-index: 10;
+    top: -15px;
 }
-.bg-logo::before
-{
-	background-color: #81b3d2;
-	border-radius: 10px;
-	content: "";
-	display: block;
-	height: 110px;
-	left: 50%;
-	margin-left: -55px;
-	ms-transform: rotate(45deg);
-	position: absolute;
-	top: -55px;
-	transform: rotate(45deg);
-	webkit-transform: rotate(45deg);
-	width: 110px;
-	z-index: -1;
-}
+
 .header-content
 {
 	display: inline-block;
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: top;
 	width: 20%;
-	margin-top:-10px;
+	padding-top:16px;
 }
 .header-content>a
 {
@@ -179,11 +164,12 @@ ul
 {
 	background: #ffffff url("../img/background photo.jpg") no-repeat 50% 19%;
 	background-size: cover;
-	height: 514px;
+	height: 518px;
 	margin-bottom: 60px;
 	margin-top: -8px;
 	width: 100%;
-	z-index: 10;
+	z-index: 18;
+	position:relative;
 }
 .big-logo::before
 {
@@ -193,8 +179,8 @@ ul
 	left: 1;
 	min-height: 57px;
 	position: absolute;
-	top: 503px;
 	width: 100%;
+	bottom:0;
 }
 .reasons-header
 {
@@ -243,18 +229,20 @@ ul
 .reasons-title
 {
 	color: #ffffff;
-	margin-bottom: 23px;
+	margin-bottom: 21px;
 	padding: 0px 16px;
+	margin-top:24px;
 }
 .reasons-item p
 {
-	padding-top: 15px;
+	padding-top: 18px;
+	line-height:21px;
 }
 .features-item
 {
 	float: left;
 	margin-left: 65px;
-	margin-right: 103px;
+	margin-right: 105px;
 	margin-top: 55px;
 	margin-bottom:8px;
 	min-height: 270px;
@@ -273,8 +261,8 @@ ul
 .features-text
 {
 	line-height: 21px;
-	margin-left: -15px;
-	margin-top: 25px;
+	margin-left: -16px;
+	margin-top: 22px;
 	text-align: center;
 	width: 310px;
 }
@@ -291,12 +279,11 @@ ul
 	color: #000000;
 	margin-top: 0px;
 	padding: 15px 0;
-	margin-bottom:3px;
+	margin-bottom:7px;
 }
 .reason-grey p
 {
-	padding: 17px 7px;
-	padding-left: 19px;
+	padding: 17px 10px;
 }
 .reason-grey .narrow-text
 {
@@ -311,8 +298,8 @@ ul
 {
 	font-size: 30px;
 	font-weight: bold;
-	margin-bottom: 17px;
-	padding: 14px 0;
+	margin-bottom: 19px;
+	padding: 13px 0 11px;
 	text-align: center;
 }
 .appointment p
@@ -346,27 +333,32 @@ ul
 }
 .popup-form-header
 {
-	margin-left: 26.5%;
+	margin-left: 26%;
 	margin-right: 26%;
 	margin-top: 40px;
 }
 .popup-btn
 {
-	background-color: #766357;
-	border: 0;
-	color: white;
-	font-size: 21px;
-	font-weight: 400;
-	padding-bottom: 30px;
-	padding-top: 30px;
-	text-transform: uppercase;
-	width: 570px;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 30px 140px;
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #766357;
+    cursor: pointer;
 }
 .popup-label
 {
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
+	padding-left:6px;
 }
 .popup-form-in
 {
@@ -379,21 +371,20 @@ ul
 }
 .popup-form-data
 {
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	margin-left: 55px;
-	margin-right: 55px;
 }
 .form-old
 {
 	float: left;
 	margin-left: 55px;
-	margin-top:-10px;
+	margin-top: 0px;
 }
 .form-babes
 {
 	float: right;
-	margin-right: 60px;
-	margin-top:-10px;
+	margin-right: 55px;
+	margin-top: 0px;
 }
 input::-webkit-input-placeholder
 {
@@ -408,20 +399,17 @@ input::-webkit-input-placeholder
 	font-size: 14px;
 	font-weight: 700;
 	outline: none;
-	padding: 8px 14px;
+	padding: 8px 12px 6px;
 	text-transform: uppercase;
-	width: 317px;
+	width: 320px;
+	background-image: url("../img/cal.png");
+	background-position: 97%;
+	background-repeat: no-repeat;
 }
 .form-type:focus
 {
 	background-color: white;
 	box-shadow: inset 0 0 0 1px #f2f2f2;
-}
-.form-type
-{
-	background-image: url("../img/cal.png");
-	background-position: 96%;
-	background-repeat: no-repeat;
 }
 .form-type:hover
 {
@@ -437,7 +425,7 @@ input::-webkit-input-placeholder
 }
 .popup-label>.form-type
 {
-	margin-left: 15px;
+	margin-left: 17px;
 }
 .form-old>.btn-minus
 {
@@ -483,10 +471,10 @@ input::-webkit-input-placeholder
 {
 	background-color: #81b3d2;
 	border: 0;
-	margin: 50px 60px 50px 55px;
+	margin: 52px 60px 50px 55px;
 	padding-bottom: 19px;
-	padding-top: 18px;
-	width: 455px;
+	padding-top: 20px;
+	width: 459px;
 }
 .appontment-form-submit:hover
 {
@@ -953,8 +941,8 @@ fieldset
 {
 	display: inline-block;
 	padding-bottom: 30px;
-	padding-top: 37px;
-	padding-left:4px;
+	padding-top: 35px;
+	padding-left:1px;
 	text-align: center;
 	vertical-align: middle;
 	width: 33%;
